@@ -23,7 +23,7 @@ class LuckyController extends Controller
 
         $html = $this->container->get('templating')->render(
             'lucky/number.html.twig',
-            array('luckyNumberList' => $numbersList)
+            array('luckyNumberList' => $numbersList, 'numero' => 3)
         );
 
         return new Response($html);
